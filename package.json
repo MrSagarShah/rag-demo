@@ -1,0 +1,22 @@
+{
+  "name": "rag-demo",
+  "version": "1.0.0",
+  "description": "A small, runnable TypeScript RAG demo: ingest local docs, embed, retrieve, and answer with inline citations — plus a tiny eval that checks citation correctness.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "ingest": "tsx src/ingest.ts",
+    "query": "tsx src/query.ts",
+    "eval": "tsx src/eval.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0",
+    "openai": "^6.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
